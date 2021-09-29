@@ -1,23 +1,25 @@
 <form>
-    <div>
-        <label>Identificador: </label>
-        <input type="number" name="identificador" [(ngModel)]="ayuda.identificador">
-    </div>
-    <div>
-        <label>Tipo de suministro: </label>
-        <select name="tipo" [(ngModel)]="ayuda.tipo">
-      <option>Portatil</option>
-      <option>Tablet</option>
-      <option>Bicicleta</option>
-    </select>
-    </div>
-    <div>
-        <label>Cantidad de existencias: </label>
-        <input type="number" name="exist" [(ngModel)]="ayuda.exist" />
-    </div>
-    <div>
-        <button type="button " (click)='add()'>Registrar</button>
-        <button type="button " (click)='clear()'>Erase</button>
+    <div class="todo">
+        <div class="x">
+            <label>Identificador: </label><br>
+            <input type="number" name="identificador" [(ngModel)]="ayuda.identificador">
+        </div>
+        <div class="x">
+            <label>Tipo de suministro: </label><br>
+            <select name="tipo" [(ngModel)]="ayuda.tipo">
+        <option>Portatil</option>
+        <option>Tablet</option>
+        <option>Bicicleta</option>
+      </select>
+        </div>
+        <div class="x">
+            <label>Cantidad de existencias: </label><br>
+            <input type="number" name="exist" [(ngModel)]="ayuda.exist" />
+        </div>
+        <div class="x">
+            <button type="button " (click)='add()'>Registrar</button>
+            <button type="button " (click)='clear()'>Erase</button>
+        </div>
     </div>
 </form>
 <app-registropersonas></app-registropersonas>

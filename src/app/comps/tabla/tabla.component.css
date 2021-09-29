@@ -13,15 +13,17 @@ thead th {
 
 tbody {
     font-size: 12px;
-    text-shadow: 1px 1px 1px rgb(159, 153, 185);
-    color: rgb(2, 0, 0);
     height: 10em;
 }
 
 tbody tr:nth-child(2n-1) {
-    background-color: #b89db6;
+    background-color: #0d47b3;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 tbody tr:nth-child(2n) {
     background-color: #97abbe;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }

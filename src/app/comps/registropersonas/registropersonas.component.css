@@ -1,17 +1,29 @@
 form {
     margin-left: 35%;
-    margin-top: 60px;
+    margin-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-form div {
-    padding: 4px;
+.todo {
+    border-radius: 10px;
     background-color: rgb(10, 58, 161);
+    width: fit-content;
+    padding: 20px;
+}
+
+.x {
+    padding: 7px;
     color: cornsilk;
-    width: 40%;
     text-align: center;
 }
 
+input {
+    width: 65px;
+}
+
 button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgba(5, 68, 105, 0.616);
     color: aliceblue;
+    font-size: medium;
 }
