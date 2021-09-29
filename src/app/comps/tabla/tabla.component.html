@@ -1,1 +1,15 @@
-<p>tabla works!</p>
+<table>
+    <thead>
+        <th>Identificador</th>
+        <th>Tipo de Ayuda</th>
+        <th>Cantidad de existencias</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let ayuda of ayudas'>
+            <td>{{ayuda.identificador}}</td>
+            <td>{{ayuda.tipo}}</td>
+            <td>{{ayuda.exist}}</td>
+        </tr>
+    </tbody>
+
+</table>

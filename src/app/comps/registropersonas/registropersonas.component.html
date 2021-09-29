@@ -1,1 +1,20 @@
-<p>registropersonas works!</p>
+<form>
+    <div>
+        <label>identificacion: </label>
+        <input type="number" name="identificacion" [(ngModel)]="persona.identificacion">
+    </div>
+    <div>
+        <label>Nombre: </label>
+        <input type=" text " name="nombre " [(ngModel)]="persona.nombre ">
+    </div>
+    <div>
+        <label>Tipo de ayuda: </label>
+        <select name="tipo " [(ngModel)]="persona.tipo ">
+      <option>Portatil</option>
+      <option>Tablet</option>
+      <option>Bicicleta</option>
+    </select>
+    </div>
+    <button type="button " (click)='add()'>Registrar</button>
+    <button type="button " (click)='clear()'>Erase</button>
+</form>
