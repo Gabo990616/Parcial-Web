@@ -10,11 +10,11 @@
     <div>
         <label>Tipo de ayuda: </label>
         <select name="tipo " [(ngModel)]="persona.tipo ">
-      <option>Portatil</option>
-      <option>Tablet</option>
-      <option>Bicicleta</option>
+      <option *ngFor='let ayuda of ayudas'>{{ayuda.tipo}}</option>
     </select>
     </div>
-    <button type="button " (click)='add()'>Registrar</button>
-    <button type="button " (click)='clear()'>Erase</button>
+    <div>
+        <button type="button " (click)='add()'>Registrar</button>
+        <button type="button " (click)='clear()'>Erase</button>
+    </div>
 </form>

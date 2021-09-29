@@ -7,8 +7,8 @@ import { Ayuda } from '../clases/ayuda';
 export class AyudaService {
 
   constructor() { }
-  post(ayuda:  Ayuda) {
-    let ayudas:  Ayuda[] = [];
+  post(ayuda: Ayuda) {
+    let ayudas: Ayuda[] = [];
     if (this.get() != null) {
       ayudas = this.get();
     }
@@ -20,5 +20,18 @@ export class AyudaService {
   }
   clear() {
     localStorage.removeItem('ayudas');
+  }
+  restExist(tipo: String) {
+
+    let ayudas: Ayuda[] = [];
+    if (this.get() != null) {
+      ayudas = this.get();
+    }
+    var i = 0;
+    while (ayudas[i].tipo != tipo) {
+      i++
+    }
+    ayudas[i].exist--;
+    localStorage.setItem('ayudas', JSON.stringify(ayudas));
   }
 }

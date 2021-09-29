@@ -1,5 +1,5 @@
 export class Persona {
-  identificador!:number;
+  identificacion!:number;
   nombre!:String;
   tipo!:String;
 }

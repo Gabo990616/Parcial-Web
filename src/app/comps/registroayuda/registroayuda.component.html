@@ -6,15 +6,18 @@
     <div>
         <label>Tipo de suministro: </label>
         <select name="tipo" [(ngModel)]="ayuda.tipo">
-    <option>Portatil</option>
-    <option>Tablet</option>
-    <option>Bicicleta</option>
-  </select>
+      <option>Portatil</option>
+      <option>Tablet</option>
+      <option>Bicicleta</option>
+    </select>
     </div>
     <div>
         <label>Cantidad de existencias: </label>
         <input type="number" name="exist" [(ngModel)]="ayuda.exist" />
     </div>
-    <button type="button" (click)='add()'>Registrar</button>
-    <button type="button" (click)='clear()'>Erase</button>
+    <div>
+        <button type="button " (click)='add()'>Registrar</button>
+        <button type="button " (click)='clear()'>Erase</button>
+    </div>
 </form>
+<app-registropersonas></app-registropersonas>

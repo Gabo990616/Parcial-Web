@@ -11,5 +11,18 @@
             <td>{{ayuda.exist}}</td>
         </tr>
     </tbody>
-
+</table>
+<table>
+    <thead>
+        <th>Identificacion</th>
+        <th>Nombre</th>
+        <th>Tipo de Ayuda</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let persona of personas'>
+            <td>{{persona.identificacion}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.tipo}}</td>
+        </tr>
+    </tbody>
 </table>

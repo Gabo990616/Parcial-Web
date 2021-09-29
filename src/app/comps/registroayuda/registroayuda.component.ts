@@ -17,7 +17,7 @@ export class RegistroayudaComponent implements OnInit {
 
   }
   add() {
-    if (this.ayuda.identificador != null && this.ayuda.tipo != null || this.ayuda.exist != null) {
+    if (this.ayuda.identificador != null && this.ayuda.tipo != null && this.ayuda.exist != null) {
       this.ayudaservice.post(this.ayuda);
       this.router.navigate(['/tabla']);
     } else {

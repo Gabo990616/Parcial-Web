@@ -1,0 +1,27 @@
+table {
+    background-color: rgb(248, 247, 190);
+    table-layout: fixed;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+thead th {
+    width: 5%;
+}
+
+tbody {
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgb(159, 153, 185);
+    color: rgb(2, 0, 0);
+    height: 10em;
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: #b89db6;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #97abbe;
+}
